@@ -1,0 +1,344 @@
+/***********************/
+/*HEADER*/
+/**********************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebfbee;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  font-size: 3rem;
+  letter-spacing: 0.6rem;
+  color: #381e08;
+}
+
+/***********************/
+/*NAVİGATİON*/
+/**********************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3rem;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #2b8a3e;
+}
+
+.main-nav-link.nav-cta:link,     /*nav listesinin son ögesi, yardımcı sınıf. öncelikli olsun diye iki sınıfını birden yazdık*/
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #37b24d;
+}
+
+.main-nav-link.nav-cta:hover,     /*nav listesinin son ögesi, yardımcı sınıf. öncelikli olsun diye iki sınıfını birden yazdık*/
+.main-nav-link.nav-cta:active {
+  background-color: #2b8a3e;
+}
+
+/***********************/
+/*HERO SECTION*/
+/**********************/
+
+.section-hero {
+  background-color: #ebfbee;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #37b24d;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #2b8a3e;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/***********************/
+/*SECTION-İCONS*/
+/**********************/
+.section-icons {
+  padding: 6.2rem 6.2rem 0 6.2rem;
+}
+
+.icon-boxs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  column-gap: 8rem;
+}
+.icon-text-box {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.icon-img {
+  width: 10rem;
+  height: 10rem;
+  opacity: 70%;
+}
+.icon-text {
+  font-size: 1.4rem;
+  color: inherit;
+}
+
+/***********************/
+/*SECTION-CARD*/
+/**********************/
+
+.section-card {
+  padding: 9.6rem 0;
+}
+
+.card-heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 4.8rem;
+}
+
+.cards-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 4.8rem;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  padding-bottom: 3.2rem;
+}
+
+.card-box:hover {
+  transform: translateY(-1rem);
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-text {
+  font-size: 2rem;
+  text-decoration: none;
+  color: inherit;
+}
+.card-text:hover {
+  color: #2b8a3e;
+}
+.card-content {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1.4rem 1.6rem;
+}
+.card-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2b8a3e;
+}
+
+.span-price {
+  font-size: 1.4rem;
+  text-decoration: 1.4px line-through #666;
+  font-weight: 400;
+  color: #381e08;
+}
+
+.slash {
+  color: #777;
+}
+
+.span-night {
+  color: #777;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+/***********************/
+/*HOW IT WORKS SECTION*/
+/**********************/
+
+.section-why {
+  padding: 9.6rem 0;
+  border-top: 1px solid #eee;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 8rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-right: -1.6rem;
+}
+
+/***********************/
+/*SECTION-TESTİMONİAL- GALLERY*/
+/**********************/
+
+.section-gallery {
+  padding: 9.6rem 0;
+  background-color: #d3f9d8;
+}
+
+.testimonials-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+
+.testimonial {
+  width: 75%;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  padding: 2.4rem;
+}
+
+.testimonial-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 3.2rem;
+}
+
+.testimonial-img {
+  border-radius: 50%;
+}
+.testimonial-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.date {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #777;
+}
+
+.number {
+  font-size: 3.2rem;
+}
+
+.puan-icon {
+  color: #2b8a3e;
+}
+
+.testimonial-img-puan {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.gallery-img {
+  width: 180%;
+  border: 2px solid #d3f9d8;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(2);
+}
